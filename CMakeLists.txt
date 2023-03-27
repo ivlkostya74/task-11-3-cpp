@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22.0)
+project(DinamicLibCMake)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+add_library(CMakeDinamikLib SHARED  dinamicLibCMake/Leaver.h dinamicLibCMake/Leaver.cpp)
+add_executable(CMakeDinamikExe ConsoleApplication1/ConsoleApplication1.cpp)
+target_link_libraries(CMakeDinamikExe CMakeDinamikLib )
