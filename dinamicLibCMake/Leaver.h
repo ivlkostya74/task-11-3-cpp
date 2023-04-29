@@ -2,7 +2,6 @@
 #include <iostream>
 
 
-//#define LEAVERDYNAMIC_API 
 
 
 class Leaver
