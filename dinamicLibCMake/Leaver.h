@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-#define LEAVERDYNAMIC_API __declspec(dllimport)
+//#define LEAVERDYNAMIC_API 
 
 
 class Leaver
@@ -10,5 +10,5 @@ class Leaver
 private:
 	const std::string Bay = "До свидания, ";
 public:
-	LEAVERDYNAMIC_API std::string leave(std::string);
+	__declspec(dllimport) std::string leave(std::string);
 };
